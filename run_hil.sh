@@ -11,7 +11,7 @@ sed -e "
     s|%DATABASE_URI%|$DATABASE_URI|g;
 " -i /etc/haas.cfg
 
-haas-admin db create
+cd /etc && haas-admin db create
 
 # Run apache in the foreground
 apachectl -DFOREGROUND

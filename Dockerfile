@@ -29,3 +29,5 @@ RUN chown www-data:www-data /etc/haas.cfg
 ADD run_hil.sh .
 
 EXPOSE 80
+
+CMD ./run_hil.sh

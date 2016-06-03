@@ -7,5 +7,5 @@ cd haas && sudo python setup.py install && cd ../
 
 # Container
 docker build --rm -t knikolla/hil .
-docker run -d -p 5000:80 --name hil0 -e DB=$1 knikolla/hil:latest
+docker run -d -p 5000:80 --name hil0 -e "DB=$1" knikolla/hil:latest
 
