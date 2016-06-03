@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 sudo apt-get update
-sudo apt-get install -y git docker python-pip python-dev python-lxml
+sudo apt-get install -y git python-pip python-dev python-lxml
 
 git clone https://github.com/CCI-MOC/haas.git
 cd haas && sudo python setup.py install && cd ../
