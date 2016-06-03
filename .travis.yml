@@ -11,8 +11,11 @@ dist: trusty
 services:
   - docker
 
+env:
+  - DB=sqlite
+
 install:
-  - ./install.sh
+  - ./travis-ci/install.sh $DB
 
 script:
-  - ./run_tests.sh
+  - cd travis-ci && ./run_tests.sh

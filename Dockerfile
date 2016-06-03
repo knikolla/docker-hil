@@ -26,5 +26,6 @@ RUN git clone https://github.com/CCI-MOC/haas.git && cd haas && \
 COPY haas.cfg /etc/haas.cfg
 RUN chown www-data:www-data /etc/haas.cfg
 
-CMD ["apachectl", "-DFOREGROUND"]
+ADD run_hil.sh .
+
 EXPOSE 80
