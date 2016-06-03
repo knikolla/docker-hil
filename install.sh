@@ -14,6 +14,5 @@ docker run -d --name postgres0 --net=hil-net --ip=192.168.98.2 \
 
 # Container
 docker build --rm -t knikolla/hil .
-docker run -d -p 5000:80 --name hil0 --net=hil-net --ip=192.168.98.3 \
-    knikolla/hil:latest
+docker run -d -p 5000:80 --name hil0 --net=hil-net knikolla/hil:latest
 
